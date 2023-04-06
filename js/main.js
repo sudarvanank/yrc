@@ -33,8 +33,65 @@
             $('.navbar').removeClass('nav-sticky');
         }
     });
+
+    //Active section styles
+    $(document).ready(function () { 
+        $('.l1').click(function() { 
+            $(this).addClass('active');
+            $('.l2, .l3, .l4, .l5, .l6, .l7, .l8').removeClass('active');
+        }); 
+    });
     
+    $(document).ready(function () { 
+        $('.l2').click(function() { 
+            $(this).addClass('active'); 
+            $('.l1, .l3, .l4, .l5, .l6, .l7, .l8').removeClass('active');
+        }); 
+    });
+
+    $(document).ready(function () { 
+        $('.l3').click(function() { 
+            $(this).addClass('active');
+            $('.l1, .l2, .l4, .l5, .l6, .l7, .l8').removeClass('active'); 
+        }); 
+    });
+  
+    $(document).ready(function () { 
+        $('.l4').click(function() { 
+            $(this).addClass('active'); 
+            $('.l1, .l2, .l3, .l5, .l6, .l7, .l8').removeClass('active');
+        }); 
+    });
+
+    $(document).ready(function () { 
+        $('.l5').click(function() { 
+            $(this).addClass('active'); 
+            $('.l1, .l2, .l3, .l4, .l6, .l7, .l8').removeClass('active');
+        }); 
+    });
+
+    $(document).ready(function () { 
+        $('.l6').click(function() { 
+            $(this).addClass('active'); 
+            $('.l1, .l2, .l3, .l4, .l5, .l7, .l8').removeClass('active');
+        }); 
+    });
     
+    $(document).ready(function () { 
+        $('.l7').click(function() { 
+            $(this).addClass('active'); 
+            $('.l1, .l2, .l3, .l4, .l5, .l6, .l8').removeClass('active');
+        }); 
+    });
+    
+    $(document).ready(function () { 
+        $('.l8').click(function() { 
+            $(this).addClass('active'); 
+            $('.l1, .l2, .l3, .l4, .l5, .l6, .l7').removeClass('active');
+        }); 
+    });
+
+   
     // Dropdown on mouse hover
     $(document).ready(function () {
         function toggleNavbarMethod() {
